@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+  </head>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root{margin: 0; padding: 0;}
+
+    body{
+        height: 100vh;
+        background: linear-gradient(rgb(22, 22, 22), rgb(0, 0, 0));
+    }
+
+    
+
+    .padre{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, span{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*GROSOR DE FUENTE*/
+    .fw-01{font-weight: 200;}
+
+    .fw-02{font-weight: 300;}
+
+    .fw-03{font-weight: 400;}
+
+    .fw-04{font-weight: 500;}
+
+    .fw-05{font-weight: 700;}
+
+    .fw-06{font-weight: 900;}
+
+
+    /*TAMAÑO DE FUENTE*/
+    .fs-01{font-size: 0.5rem;}
+
+    .fs-02{font-size: 1rem;}
+
+    .fs-03{font-size: 1.5rem;}
+
+    .fs-04{font-size: 2rem;}
+
+    .fs-05{font-size: 2.5rem;}
+
+    .fs-06{font-size: 3rem;}
+
+    .fs-07{font-size: 3.5rem;}
+
+    .fs-08{font-size: 4rem;}
+    
+    .fs-09{font-size: 4.5rem;}
+
+    .fs-10{font-size: 5rem;}
+
+    .logo{
+        height: 100px;
+        width: auto;
+    }
+
+
+/*JUSTIFICADOS*/
+.fx-str{display: flex; justify-content: flex-start;}
+.fx-ctr{display: flex; justify-content: center;}
+.fx-end{display: flex; justify-content: flex-end;}
+
+.spc-btw{display: flex; justify-content: space-around;}
+.spc-ard{display: flex; justify-content: space-between;}
+.spc-evl{display: flex; justify-content: space-evenly;}
+
+.flex-wrp{flex-wrap: wrap;}
+
+.clock{
+    width: 90px;
+    height: 90px;
+    border: solid 3px rgb(255, 150, 0);
+  border-radius: 10%;
+  margin: 0px 18px 25px 18px;
+}
+
+.flex-ca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-ib{
+    display: inline-block;
+}
+
+/*MARGINS*/
+
+.mt-01{margin-top: 0.5rem;}
+.mt-02{margin-top: 1rem;}
+.mt-03{margin-top: 1.5rem;}
+.mt-04{margin-top: 2rem;}
+.mt-05{margin-top: 2.5rem;}
+.mt-06{margin-top: 3rem;}
+.mt-07{margin-top: 3.5rem;}
+.mt-08{margin-top: 4rem;}
+.mt-09{margin-top: 4.5rem;}
+.mt-10{margin-top: 5rem;}
+
+.mr-01{margin-right: 0.5rem;}
+.mr-02{margin-right: 1rem;}
+.mr-03{margin-right: 1.5rem;}
+.mr-04{margin-right: 2rem;}
+.mr-05{margin-right: 2.5rem;}
+.mr-06{margin-right: 3rem;}
+.mr-07{margin-right: 3.5rem;}
+.mr-08{margin-right: 4rem;}
+.mr-09{margin-right: 4.5rem;}
+.mr-10{margin-right: 5rem;}
+
+.mb-01{margin-bottom: 0.5rem;}
+.mb-02{margin-bottom: 1rem;}
+.mb-03{margin-bottom: 1.5rem;}
+.mb-04{margin-bottom: 2rem;}
+.mb-05{margin-bottom: 2.5rem;}
+.mb-06{margin-bottom: 3rem;}
+.mb-07{margin-bottom: 3.5rem;}
+.mb-08{margin-bottom: 4rem;}
+.mb-09{margin-bottom: 4.5rem;}
+.mb-10{margin-bottom: 5rem;}
+
+.ml-01{margin-left: 0.5rem;}
+.ml-02{margin-left: 1rem;}
+.ml-03{margin-left: 1.5rem;}
+.ml-04{margin-left: 2rem;}
+.ml-05{margin-left: 2.5rem;}
+.ml-06{margin-left: 3rem;}
+.ml-07{margin-left: 3.5rem;}
+.ml-08{margin-left: 4rem;}
+.ml-09{margin-left: 4.5rem;}
+.ml-10{margin-left: 5rem;}
+
+.my-01{margin: 0.5rem 0 0.5rem 0;}
+.my-02{margin: 1rem 0 1rem 0;}
+.my-03{margin: 1.5rem 0 1.5rem 0;}
+.my-04{margin: 2rem 0 2rem 0;}
+.my-05{margin: 2.5rem 0 2.5rem 0;}
+.my-06{margin: 3rem 0 3rem 0;}
+
+
+/*PADDINGS*/
+
+
+
+</style>
+
+
+  <body>
+    <div class="padre">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="fw-06 fs-06">BIENVENIDO A</h1>
+                <img class="logo my-03" src="images/logo.png" alt="logo">
+                <p>NUESTRO SITIO WEB ESTÁ EN CONSTRUCCIÓN</p>
+
+                <div class="fx-wrp fx-ctr cd100">
+                    
+                    <div class=" clock">
+                        <span class="fs-04 fw-01 days">35</span>
+                        <span class="fs-08 ">Dias</span>
+                    </div>
+    
+                    <div class=" clock">
+                        <span class="fs-04 fw-01 hours">17</span>
+                        <span class="fs-08">Horas</span>
+                    </div>
+    
+                    <div class=" clock">
+                        <span class="fs-04 fw-01 minutes">50</span>
+                        <span class="fs-08">Min</span>
+                    </div>
+    
+                    <div class=" clock">
+                        <span class="fs-04 fw-01 seconds">39</span>
+                        <span class="fs-08">Sec</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+<!--===============================================================================================-->	
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+
+
+<!--===============================================================================================-->
+
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			// Set Endtime here
+			// Endtime must be > current time
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 18,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York", can be empty
+			// go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+
+  </body>
+</html>
