@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Hello, world!</title>
 
   </head>
@@ -16,27 +16,33 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 
-:root{margin: 0; padding: 0;}
-
     body{
         height: 100vh;
         background: linear-gradient(rgb(22, 22, 22), rgb(0, 0, 0));
-    }
-
-    
+    }    
 
     .padre{
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span{
         color: white;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
+        line-height: 75%;
+        margin: 0;
+        padding: 0;
+        
     }
+
+    /*COLORES*/
+
+    .cr-we{color: rgb(255, 255, 255);}
+    .cr-bk{color: rgb(0, 0, 0);}
+    .cr-yw{color: rgb(255, 150, 0);}
+    .cr-rd{color: rgb(255, 55, 55);}
+    .cr-be{color: rgb(0, 89, 255);}
+    .cr-gn{color: rgb(7, 199, 0);}
 
     /*GROSOR DE FUENTE*/
     .fw-01{font-weight: 200;}
@@ -73,40 +79,59 @@
 
     .fs-10{font-size: 5rem;}
 
-    .logo{
-        height: 100px;
-        width: auto;
-    }
+/*ALINEADO DE TEXTO*/    
+
+    .ta-st{text-align: start;}
+    .ta-cr{text-align: center;}
+    .ta-ed{text-align: end;}
+    .ta-jy{text-align: justify;}
 
 
-/*JUSTIFICADOS*/
-.fx-str{display: flex; justify-content: flex-start;}
-.fx-ctr{display: flex; justify-content: center;}
-.fx-end{display: flex; justify-content: flex-end;}
 
-.spc-btw{display: flex; justify-content: space-around;}
-.spc-ard{display: flex; justify-content: space-between;}
-.spc-evl{display: flex; justify-content: space-evenly;}
 
-.flex-wrp{flex-wrap: wrap;}
+/*DISPLAYS*/
 
-.clock{
-    width: 90px;
-    height: 90px;
-    border: solid 3px rgb(255, 150, 0);
-  border-radius: 10%;
-  margin: 0px 18px 25px 18px;
-}
+.dp-fx{display: flex;}
 
-.flex-ca{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-ib{
+.dp-ib{
     display: inline-block;
 }
+
+/*FLEX CONTAINERS*/
+
+
+
+/*DIRECCION*/
+.fd-rw{display: flex; flex-direction: row;}
+.fd-rr{display: flex; flex-direction: row-reverse;}
+.fd-cm{display: flex; flex-direction: column;}
+.fd-cr{display: flex; flex-direction: column-reverse;}
+
+/*WRAP*/
+.fx-wp{flex-wrap: wrap;}
+
+/*JUSTIFICADOS*/
+.jc-st{display: flex; justify-content: flex-start;}
+.jc-cr{display: flex; justify-content: center;}
+.jc-ed{display: flex; justify-content: flex-end;}
+.jc-sa{display: flex; justify-content: space-around;}
+.jc-sb{display: flex; justify-content: space-between;}
+.jc-se{display: flex; justify-content: space-evenly;}
+
+/*ALINEAMIENTOS*/
+.ai-st{display: flex; align-items: flex-start;}
+.ai-cr{display: flex; align-items: center;}
+.ai-ed{display: flex; align-items: flex-end;}
+.ai-sh{display: flex; align-items: stretch;}
+.ai-be{display: flex; align-items: baseline;}
+
+/*JUSTIFICADO Y ALINEAMIENTO*/
+.ja-st{display: flex; justify-content: flex-start; align-items: flex-start;}
+.ja-cr{display: flex; justify-content: center; align-items: center;}
+.ja-en{display: flex; justify-content: flex-end; align-items: flex-end;}
+
+
+/*FLEX ITEMS*/
 
 /*MARGINS*/
 
@@ -154,56 +179,191 @@
 .ml-09{margin-left: 4.5rem;}
 .ml-10{margin-left: 5rem;}
 
-.my-01{margin: 0.5rem 0 0.5rem 0;}
-.my-02{margin: 1rem 0 1rem 0;}
-.my-03{margin: 1.5rem 0 1.5rem 0;}
-.my-04{margin: 2rem 0 2rem 0;}
-.my-05{margin: 2.5rem 0 2.5rem 0;}
-.my-06{margin: 3rem 0 3rem 0;}
+.my-01{margin: 0.5rem 0;}
+.my-02{margin: 1rem 0;}
+.my-03{margin: 1.5rem 0;}
+.my-04{margin: 2rem 0;}
+.my-05{margin: 2.5rem 0;}
+.my-06{margin: 3rem 0;}
+
+.mx-01{margin: 0 0.5rem;}
+.mx-02{margin: 0 1rem;}
+.mx-03{margin: 0 1.5rem;}
+.mx-04{margin: 0 2rem;}
+.mx-05{margin: 0 2.5rem;}
+.mx-06{margin: 0 3rem;}
 
 
 /*PADDINGS*/
+.pt-01{padding-top: 0.5rem;}
+.pt-02{padding-top: 1rem;}
+.pt-03{padding-top: 1.5rem;}
+.pt-04{padding-top: 2rem;}
+.pt-05{padding-top: 2.5rem;}
+.pt-06{padding-top: 3rem;}
+.pt-07{padding-top: 3.5rem;}
+.pt-08{padding-top: 4rem;}
+.pt-09{padding-top: 4.5rem;}
+.pt-10{padding-top: 5rem;}
+
+.pr-01{padding-right: 0.5rem;}
+.pr-02{padding-right: 1rem;}
+.pr-03{padding-right: 1.5rem;}
+.pr-04{padding-right: 2rem;}
+.pr-05{padding-right: 2.5rem;}
+.pr-06{padding-right: 3rem;}
+.pr-07{padding-right: 3.5rem;}
+.pr-08{padding-right: 4rem;}
+.pr-09{padding-right: 4.5rem;}
+.pr-10{padding-right: 5rem;}
+
+.pb-01{padding-bottom: 0.5rem;}
+.pb-02{padding-bottom: 1rem;}
+.pb-03{padding-bottom: 1.5rem;}
+.pb-04{padding-bottom: 2rem;}
+.pb-05{padding-bottom: 2.5rem;}
+.pb-06{padding-bottom: 3rem;}
+.pb-07{padding-bottom: 3.5rem;}
+.pb-08{padding-bottom: 4rem;}
+.pb-09{padding-bottom: 4.5rem;}
+.pb-10{padding-bottom: 5rem;}
+
+.pl-01{padding-left: 0.5rem;}
+.pl-02{padding-left: 1rem;}
+.pl-03{padding-left: 1.5rem;}
+.pl-04{padding-left: 2rem;}
+.pl-05{padding-left: 2.5rem;}
+.pl-06{padding-left: 3rem;}
+.pl-07{padding-left: 3.5rem;}
+.pl-08{padding-left: 4rem;}
+.pl-09{padding-left: 4.5rem;}
+.pl-10{padding-left: 5rem;}
+
+.py-01{padding: 0.5rem 0;}
+.py-01{padding: 1rem 0;}
+.py-01{padding: 1.5rem 0;}
+.py-01{padding: 2rem 0;}
+.py-01{padding: 2.5rem 0;}
+.py-01{padding: 3rem 0;}
+
+.px-01{padding: 0 0.5rem;}
+.px-01{padding: 0 1rem;}
+.px-01{padding: 0 1.5rem;}
+.px-01{padding: 0 2rem;}
+.px-01{padding: 0 2.5rem;}
+.px-01{padding: 0 3rem;}
 
 
+/*PAGE CODE*/
+
+.clock{
+    width: 100px;
+    height: 100px;
+    border: solid 3px rgb(255, 150, 0);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  flex-direction: column;
+}
+
+.logo{
+        height: 100px;
+        width: auto;
+    }
+
+
+.btn-sub {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-sub::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  background: -webkit-linear-gradient(180deg, #242424, #1a1a1a, #000000);
+  background: -o-linear-gradient(180deg, #242424, #1a1a1a, #000000);
+  background: -moz-linear-gradient(180deg, #242424, #1a1a1a, #000000);
+  background: linear-gradient(180deg, #242424, #1a1a1a, #000000);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.btn-sub:hover:before {
+  opacity: 1;
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+}
 
 </style>
 
 
   <body>
-    <div class="padre">
+    <div class="padre ja-cr">
         <div class="row">
-            <div class="col text-center">
+            <div class="col ta-cr">
                 <h1 class="fw-06 fs-06">BIENVENIDO A</h1>
-                <img class="logo my-03" src="images/logo.png" alt="logo">
-                <p>NUESTRO SITIO WEB ESTÁ EN CONSTRUCCIÓN</p>
+                <img class="logo my-06" src="images/logo.png" alt="logo">
+                <p class="fs-04">Estamos <span class="cr-yw"> construyendo </span> nuestro sitio web</p>
 
-                <div class="fx-wrp fx-ctr cd100">
+                <div class="fx-wp jc-cr my-06 cd100">
                     
-                    <div class=" clock">
-                        <span class="fs-04 fw-01 days">35</span>
-                        <span class="fs-08 ">Dias</span>
+                    <div class="col-3 clock ">
+                        <span class="fs-06 fw-05 mb-02 days">35</span>
+                        <span class="fs-03">Días</span>
                     </div>
     
-                    <div class=" clock">
-                        <span class="fs-04 fw-01 hours">17</span>
-                        <span class="fs-08">Horas</span>
+                    <div class="col-3 clock">
+                        <span class="fs-06 fw-05 mb-02 hours">17</span>
+                        <span class="fs-03">Horas</span>
                     </div>
     
-                    <div class=" clock">
-                        <span class="fs-04 fw-01 minutes">50</span>
-                        <span class="fs-08">Min</span>
+                    <div class="col-3 clock">
+                        <span class="fs-06 fw-05 mb-02 minutes">50</span>
+                        <span class="fs-03">Min</span>
                     </div>
     
-                    <div class=" clock">
-                        <span class="fs-04 fw-01 seconds">39</span>
-                        <span class="fs-08">Sec</span>
+                    <div class="col-3 clock ">
+                        <span class="fs-06 fw-05 mb-02 seconds">39</span>
+                        <span class="fs-03">Sec</span>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col">
+                <button class="btn-sub cr-we"  data-toggle="modal" data-target="#subscribe">
+                    ¡Envíanos un correo y contáctanos!
+                </button>
+            </div>
+            </div>
             </div>
         </div>
+        <footer class="footer mb-05">
+            <a href="https://bsdesarrollo.com">
+                <p class="cr-we"> 2021 |<span class="cr-yw"> BS</span>DESARROLLO </p>
+            </a>
+        </div>
+    </footer>
     </div>
-
+    
 
 
 
