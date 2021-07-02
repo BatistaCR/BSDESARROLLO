@@ -23,10 +23,10 @@
 
     .padre{
         height: 100%;
+        color: #ffffff;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span{
-        color: white;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
         line-height: 75%;
@@ -37,12 +37,19 @@
 
     /*COLORES*/
 
-    .cr-we{color: rgb(255, 255, 255);}
-    .cr-bk{color: rgb(0, 0, 0);}
-    .cr-yw{color: rgb(255, 150, 0);}
-    .cr-rd{color: rgb(255, 55, 55);}
-    .cr-be{color: rgb(0, 89, 255);}
-    .cr-gn{color: rgb(7, 199, 0);}
+    .cr-white{color: rgb(255, 255, 255);}
+    .cr-black{color: rgb(0, 0, 0);}
+    .cr-yellow{color: rgb(255, 150, 0);}
+    .cr-red{color: rgb(255, 55, 55);}
+    .cr-blue{color: rgb(0, 100, 255);}
+    .cr-green{color: rgb(20, 200, 20);}
+
+    .bg-white{background-color: rgb(255, 255, 255);}
+    .bg-black{background-color: rgb(0, 0, 0);}
+    .bg-yellow{background-color: rgb(255, 150, 0);}
+    .bg-red{background-color: rgb(255, 55, 55);}
+    .bg-blue{background-color: rgb(0, 100, 255);}
+    .bg-green{background-color: rgb(20, 150, 20);}
 
     /*GROSOR DE FUENTE*/
     .fw-01{font-weight: 200;}
@@ -81,19 +88,19 @@
 
 /*ALINEADO DE TEXTO*/    
 
-    .ta-st{text-align: start;}
-    .ta-cr{text-align: center;}
-    .ta-ed{text-align: end;}
-    .ta-jy{text-align: justify;}
+    .ta-start{text-align: start;}
+    .ta-center{text-align: center;}
+    .ta-end{text-align: end;}
+    .ta-justify{text-align: justify;}
 
 
 
 
 /*DISPLAYS*/
 
-.dp-fx{display: flex;}
+.dp-flex{display: flex;}
 
-.dp-ib{
+.dp-in-block{
     display: inline-block;
 }
 
@@ -102,33 +109,33 @@
 
 
 /*DIRECCION*/
-.fd-rw{display: flex; flex-direction: row;}
-.fd-rr{display: flex; flex-direction: row-reverse;}
-.fd-cm{display: flex; flex-direction: column;}
-.fd-cr{display: flex; flex-direction: column-reverse;}
+.fd-row{display: flex; flex-direction: row;}
+.fd-row-reverse{display: flex; flex-direction: row-reverse;}
+.fd-column{display: flex; flex-direction: column;}
+.fd-col-reverse{display: flex; flex-direction: column-reverse;}
 
 /*WRAP*/
-.fx-wp{flex-wrap: wrap;}
+.fx-wrap{flex-wrap: wrap;}
 
 /*JUSTIFICADOS*/
-.jc-st{display: flex; justify-content: flex-start;}
-.jc-cr{display: flex; justify-content: center;}
-.jc-ed{display: flex; justify-content: flex-end;}
-.jc-sa{display: flex; justify-content: space-around;}
-.jc-sb{display: flex; justify-content: space-between;}
-.jc-se{display: flex; justify-content: space-evenly;}
+.jc-start{display: flex; justify-content: flex-start;}
+.jc-center{display: flex; justify-content: center;}
+.jc-end{display: flex; justify-content: flex-end;}
+.jc-around{display: flex; justify-content: space-around;}
+.jc-between{display: flex; justify-content: space-between;}
+.jc-evenly{display: flex; justify-content: space-evenly;}
 
 /*ALINEAMIENTOS*/
-.ai-st{display: flex; align-items: flex-start;}
-.ai-cr{display: flex; align-items: center;}
-.ai-ed{display: flex; align-items: flex-end;}
-.ai-sh{display: flex; align-items: stretch;}
-.ai-be{display: flex; align-items: baseline;}
+.ai-start{display: flex; align-items: flex-start;}
+.ai-center{display: flex; align-items: center;}
+.ai-end{display: flex; align-items: flex-end;}
+.ai-stretch{display: flex; align-items: stretch;}
+.ai-baseline{display: flex; align-items: baseline;}
 
 /*JUSTIFICADO Y ALINEAMIENTO*/
-.ja-st{display: flex; justify-content: flex-start; align-items: flex-start;}
-.ja-cr{display: flex; justify-content: center; align-items: center;}
-.ja-en{display: flex; justify-content: flex-end; align-items: flex-end;}
+.ja-start{display: flex; justify-content: flex-start; align-items: flex-start;}
+.ja-center{display: flex; justify-content: center; align-items: center;}
+.ja-end{display: flex; justify-content: flex-end; align-items: flex-end;}
 
 
 /*FLEX ITEMS*/
@@ -193,6 +200,12 @@
 .mx-05{margin: 0 2.5rem;}
 .mx-06{margin: 0 3rem;}
 
+.mf-01{margin: 0.5rem 0.5rem;}
+.mf-02{margin: 1rem 1rem;}
+.mf-03{margin: 1.5rem 1.5rem;}
+.mf-04{margin: 2rem 2rem;}
+.mf-05{margin: 2.5rem 2.5rem;}
+.mf-06{margin: 3rem 3rem;}
 
 /*PADDINGS*/
 .pt-01{padding-top: 0.5rem;}
@@ -240,19 +253,25 @@
 .pl-10{padding-left: 5rem;}
 
 .py-01{padding: 0.5rem 0;}
-.py-01{padding: 1rem 0;}
-.py-01{padding: 1.5rem 0;}
-.py-01{padding: 2rem 0;}
-.py-01{padding: 2.5rem 0;}
-.py-01{padding: 3rem 0;}
+.py-02{padding: 1rem 0;}
+.py-03{padding: 1.5rem 0;}
+.py-04{padding: 2rem 0;}
+.py-05{padding: 2.5rem 0;}
+.py-06{padding: 3rem 0;}
 
 .px-01{padding: 0 0.5rem;}
-.px-01{padding: 0 1rem;}
-.px-01{padding: 0 1.5rem;}
-.px-01{padding: 0 2rem;}
-.px-01{padding: 0 2.5rem;}
-.px-01{padding: 0 3rem;}
+.px-02{padding: 0 1rem;}
+.px-03{padding: 0 1.5rem;}
+.px-04{padding: 0 2rem;}
+.px-05{padding: 0 2.5rem;}
+.px-06{padding: 0 3rem;}
 
+.pf-01{padding: 0.5rem 0.5rem;}
+.pf-02{padding: 1rem 1rem;}
+.pf-03{padding: 1.5rem 1.5rem;}
+.pf-04{padding: 2rem 2rem;}
+.pf-05{padding: 2.5rem 2.5rem;}
+.pf-06{padding: 3rem 3rem;}
 
 /*PAGE CODE*/
 
@@ -277,7 +296,7 @@
 .btn-sub {
   padding: 10px 20px;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 0.5rem;
   border: 2px solid #fff;
   position: relative;
   z-index: 1;
@@ -314,18 +333,68 @@
     position: absolute;
 }
 
+.bg-grt-black{background: #000000;
+  background: linear-gradient(180deg, #242424, #1a1a1a, #000000);}
+
+  .bg-grt-white{background: #aaaaaa;
+  background: linear-gradient(180deg, #ffffff, #e7e7e7, #aaaaaa);}
+
+  .bg-grt-yellow{background: rgb(255, 150, 0);
+  background: linear-gradient(180deg, #ffb700, #bb8900, rgb(153, 89, 0) );}
+
+  .ml-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background: rgb(255, 150, 0);
+  background: linear-gradient(180deg, #ffb700, #bb8900, rgb(153, 89, 0) );
+  color: #ffffff;
+  width: 100%;
+  }
+
+  .ml-header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+
+  .ml-body{
+      width: 100%;
+  }
+
+  .ml-btn{
+      padding: .375rem .75rem;
+      border-radius: .25rem;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+  }
+
+  .ml-btn :hover{
+      background-color: rgb(37, 37, 37);
+      transition: ease-in;
+      transition-duration: 2s;
+      border: none;
+  }
 </style>
 
 
   <body>
-    <div class="padre ja-cr">
+    <div class="padre ja-center">
         <div class="row">
-            <div class="col ta-cr">
+            <div class="col ta-center">
                 <h1 class="fw-06 fs-06">BIENVENIDO A</h1>
                 <img class="logo my-06" src="images/logo.png" alt="logo">
-                <p class="fs-04">Estamos <span class="cr-yw"> construyendo </span> nuestro sitio web</p>
+                <p class="fs-04">Estamos <span class="cr-yellow"> construyendo </span> nuestro sitio web</p>
 
-                <div class="fx-wp jc-cr my-06 cd100">
+                <div class="fx-wrap ja-center my-06 cd100">
                     
                     <div class="col-3 clock ">
                         <span class="fs-06 fw-05 mb-02 days">35</span>
@@ -348,23 +417,45 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                <button class="btn-sub cr-we"  data-toggle="modal" data-target="#subscribe">
-                    ¡Envíanos un correo y contáctanos!
-                </button>
+                    <div class="col">                             
+                        <button type="button" class="btn-sub cr-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Launch static backdrop modal
+                          </button>
             </div>
             </div>
             </div>
-        </div>
+        </div>  
         <footer class="footer mb-05">
             <a href="https://bsdesarrollo.com">
-                <p class="cr-we"> 2021 |<span class="cr-yw"> BS</span>DESARROLLO </p>
+                <p class="cr-white"> 2021 |<span class="cr-yellow"> BS</span>DESARROLLO </p>
             </a>
+        </footer>
         </div>
-    </footer>
-    </div>
     
-
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content ml-email">
+        <div class="ml-header">
+          <h5 class="my-02 fs-06 fw-06 cr-black"> CONTÁCTANOS</h5>
+          <p class="fs-03 mb-05">Y MANTENTE INFORMADO</p>
+        </div>
+        <div class="ml-body ja-center fd-column">
+            <div class="mb-05 col-8">
+                <input type="email" class="form-control" placeholder="Tu correo">
+              </div>
+              <div class="mb-3 col-8">
+                <h5 class="ta-center mb-02">¿CÓMO PODEMOS AYUDARTE?</h5>
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+        </div>
+        <div class="col-12 ja-center">
+          <button type="button" class="ml-btn btn-dark btn-lg mx-03" data-bs-dismiss="modal">CERRAR</button>
+          <button type="button" class="btn btn-primary btn-lg mx-03">ENVIAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
