@@ -44,12 +44,12 @@
     .cr-blue{color: rgb(0, 100, 255);}
     .cr-green{color: rgb(20, 200, 20);}
 
-    .bg-white{background-color: rgb(255, 255, 255);}
-    .bg-black{background-color: rgb(0, 0, 0);}
-    .bg-yellow{background-color: rgb(255, 150, 0);}
-    .bg-red{background-color: rgb(255, 55, 55);}
-    .bg-blue{background-color: rgb(0, 100, 255);}
-    .bg-green{background-color: rgb(20, 150, 20);}
+    .bc-white{background-color: rgb(255, 255, 255);}
+    .bc-black{background-color: rgb(0, 0, 0);}
+    .bc-yellow{background-color: rgb(255, 150, 0);}
+    .bc-red{background-color: rgb(255, 55, 55);}
+    .bc-blue{background-color: rgb(0, 100, 255);}
+    .bc-green{background-color: rgb(20, 150, 20);}
 
     /*GROSOR DE FUENTE*/
     .fw-01{font-weight: 200;}
@@ -186,19 +186,22 @@
 .ml-09{margin-left: 4.5rem;}
 .ml-10{margin-left: 5rem;}
 
-.my-01{margin: 0.5rem 0;}
-.my-02{margin: 1rem 0;}
-.my-03{margin: 1.5rem 0;}
-.my-04{margin: 2rem 0;}
-.my-05{margin: 2.5rem 0;}
-.my-06{margin: 3rem 0;}
+.my-01{margin-top: 0.5rem; margin-bottom: 0.5rem;}
+.my-02{margin-top: 1rem; margin-bottom: 1rem;}
+.my-03{margin-top: 1.5rem; margin-bottom: 1.5rem;}
+.my-04{margin-top: 2rem; margin-bottom: 2rem;}
+.my-05{margin-top: 2.5rem; margin-bottom: 2.5rem;}
+.my-06{margin-top: 3rem; margin-bottom: 3rem;}
 
-.mx-01{margin: 0 0.5rem;}
-.mx-02{margin: 0 1rem;}
-.mx-03{margin: 0 1.5rem;}
-.mx-04{margin: 0 2rem;}
-.mx-05{margin: 0 2.5rem;}
-.mx-06{margin: 0 3rem;}
+
+.mx-01{margin-left: 0.5rem; margin-right: 0.5rem;}
+.mx-02{margin-left: 1rem; margin-right: 1rem;}
+.mx-03{margin-left: 1.5rem; margin-right: 1.5rem;}
+.mx-04{margin-left: 2rem; margin-right: 2rem;}
+.mx-05{margin-left: 2.5rem; margin-right: 2.5rem;}
+.mx-06{margin-left: 3rem; margin-right: 3rem;}
+
+
 
 .mf-01{margin: 0.5rem 0.5rem;}
 .mf-02{margin: 1rem 1rem;}
@@ -252,19 +255,20 @@
 .pl-09{padding-left: 4.5rem;}
 .pl-10{padding-left: 5rem;}
 
-.py-01{padding: 0.5rem 0;}
-.py-02{padding: 1rem 0;}
-.py-03{padding: 1.5rem 0;}
-.py-04{padding: 2rem 0;}
-.py-05{padding: 2.5rem 0;}
-.py-06{padding: 3rem 0;}
+.py-01{padding-top: 0.5rem; padding-bottom: 0.5rem;}
+.py-02{padding-top: 1rem; padding-bottom: 1rem;}
+.py-03{padding-top: 1.5rem; padding-bottom: 1.5rem;}
+.py-04{padding-top: 2rem; padding-bottom: 2rem;}
+.py-05{padding-top: 2.5rem; padding-bottom: 2.5rem;}
+.py-06{padding-top: 3rem; padding-bottom: 3rem;}
 
-.px-01{padding: 0 0.5rem;}
-.px-02{padding: 0 1rem;}
-.px-03{padding: 0 1.5rem;}
-.px-04{padding: 0 2rem;}
-.px-05{padding: 0 2.5rem;}
-.px-06{padding: 0 3rem;}
+
+.px-01{padding-left: 0.5rem; padding-right: 0.5rem;}
+.px-02{padding-left: 1rem; padding-right: 1rem;}
+.px-03{padding-left: 1.5rem; padding-right: 1.5rem;}
+.px-04{padding-left: 2rem; padding-right: 2rem;}
+.px-05{padding-left: 2.5rem; padding-right: 2.5rem;}
+.px-06{padding-left: 3rem; padding-right: 3rem;}
 
 .pf-01{padding: 0.5rem 0.5rem;}
 .pf-02{padding: 1rem 1rem;}
@@ -368,20 +372,14 @@
   }
 
   .ml-btn{
-      padding: .375rem .75rem;
-      border-radius: .25rem;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 1rem;
       color: rgb(255, 255, 255);
-      background-color: rgb(0, 0, 0);
+      border: 1px solid transparent;
   }
 
-  .ml-btn :hover{
-      background-color: rgb(37, 37, 37);
+  .ml-btn:hover{
+      background-color: rgba(219, 219, 219, 0.24);
       transition: ease-in;
-      transition-duration: 2s;
-      border: none;
+      transition-duration: 0.25s;
   }
 </style>
 
@@ -421,6 +419,7 @@
                         <button type="button" class="btn-sub cr-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Launch static backdrop modal
                           </button>
+                          
             </div>
             </div>
             </div>
@@ -440,30 +439,32 @@
           <h5 class="my-02 fs-06 fw-06 cr-black"> CONTÁCTANOS</h5>
           <p class="fs-03 mb-05">Y MANTENTE INFORMADO</p>
         </div>
+        <form class="col-12 needs-validation" action="email.php" method="POST" novalidate>
         <div class="ml-body ja-center fd-column">
-            <div class="mb-05 col-8">
-                <input type="email" class="form-control" placeholder="Tu correo">
+              <div class="mb-05 col-8 form-floating">
+                <input type="email" name="correo" class="form-control" id="inputcorreo" placeholder="name@example.com" required>
+                <label class="cr-black" for="inputcorreo">Tu Correo</label>
+                <div class="invalid-feedback cr-white">
+                  Por favor, ingrese una dirección de correo electrónico válida.
+                </div>
               </div>
-              <div class="mb-3 col-8">
-                <h5 class="ta-center mb-02">¿CÓMO PODEMOS AYUDARTE?</h5>
-                <textarea class="form-control" rows="5"></textarea>
+              <h5 class="ta-center mb-02">¿CÓMO PODEMOS AYUDARTE?</h5>
+              <div class="mb-3 col-8 form-floating">
+                <textarea class="form-control" name="comentario" placeholder="Déjanos un comentario" id="textareacomentario" style="height: 100px" required></textarea>
+                <label class="cr-black" for="textareacomentario">Comentarios</label>
+                <div class="invalid-feedback cr-white">
+                  Por favor, envíanos tu opinión.
+                </div>
               </div>
         </div>
         <div class="col-12 ja-center">
-          <button type="button" class="ml-btn btn-dark btn-lg mx-03" data-bs-dismiss="modal">CERRAR</button>
-          <button type="button" class="btn btn-primary btn-lg mx-03">ENVIAR</button>
+          <button type="button" class="btn btn-lg ml-btn bc-black mf-03 px-06 py-02" data-bs-dismiss="modal">CERRAR</button>
+          <button type="submit" class="btn btn-lg ml-btn bc-blue mf-03 px-06 py-02">ENVIAR</button>
         </div>
+      </form>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -475,7 +476,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-
+    <script src="js/validacion.js"></script>
 <!--===============================================================================================-->	
 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
