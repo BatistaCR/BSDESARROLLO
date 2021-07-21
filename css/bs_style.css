@@ -213,7 +213,7 @@ iframe {border: none;}
 
 .bn-white{color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);}
 .bn-black{color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);}
-.bn-yellow{color: rgb(255, 255, 255); background-color: rgb(255, 150, 0);}
+.bn-yellow{color: rgb(255, 255, 255); background-color: rgb(255, 170, 0);}
 .bn-red{color: rgb(255, 255, 255); background-color: rgb(255, 55, 55);}
 .bn-blue{color: rgb(255, 255, 255); background-color: rgb(0, 100, 255);}
 .bn-green{color: rgb(255, 255, 255); background-color: rgb(20, 200, 20);}
@@ -245,7 +245,7 @@ iframe {border: none;}
 
 .bn-yellow:hover{
   color: rgb(255, 255, 255);
-  background-color: rgb(255, 150, 0);
+  background-color: rgb(255, 170, 0);
   filter:brightness(90%);
   transition: ease-in;
   transition-duration: 0.2s;
@@ -282,7 +282,7 @@ iframe {border: none;}
 /*COLORES*/
 .cr-white{color: rgb(255, 255, 255);}
 .cr-black{color: rgb(0, 0, 0);}
-.cr-yellow{color: rgb(255, 150, 0);}
+.cr-yellow{color: rgb(255, 170, 0);}
 .cr-red{color: rgb(255, 55, 55);}
 .cr-blue{color: rgb(0, 100, 255);}
 .cr-green{color: rgb(20, 200, 20);}
@@ -291,7 +291,7 @@ iframe {border: none;}
 /*BACKGROUND*/
 .bc-white{background-color: rgb(255, 255, 255);}
 .bc-black{background-color: rgb(0, 0, 0);}
-.bc-yellow{background-color: rgb(255, 150, 0);}
+.bc-yellow{background-color: rgb(255, 170, 0);}
 .bc-red{background-color: rgb(255, 55, 55);}
 .bc-blue{background-color: rgb(0, 100, 255);}
 .bc-green{background-color: rgb(20, 150, 20);}
@@ -305,7 +305,7 @@ iframe {border: none;}
   .bg-white{background: #aaaaaa;
   background: linear-gradient(180deg, #ffffff, #e7e7e7, #aaaaaa);}
   
-  .bg-yellow{background: rgb(255, 150, 0);
+  .bg-yellow{background: rgb(255, 170, 0);
   background: linear-gradient(180deg, #ffb700, #bb8900, rgb(153, 89, 0) );}
 
 
