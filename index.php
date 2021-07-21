@@ -27,22 +27,22 @@
       <div class="fx-wrap ja-center my-04 cd100 no-lh">
 
         <div class="col-3 clock my-02 mx-02">
-          <span class="fs-09 fw-05 mb-02 days">35</span>
+          <span class="fs-09 fw-05 mb-02" id="days"></span>
           <span class="fs-04">Días</span>
         </div>
 
         <div class="col-3 clock my-02 mx-02">
-          <span class="fs-09 fw-05 mb-02 hours">17</span>
+          <span class="fs-09 fw-05 mb-02" id="hours"></span>
           <span class="fs-04">Horas</span>
         </div>
 
         <div class="col-3 clock my-02 mx-02">
-          <span class="fs-09 fw-05 mb-02 minutes">50</span>
+          <span class="fs-09 fw-05 mb-02 " id="minutes"></span>
           <span class="fs-04">Min</span>
         </div>
 
         <div class="col-3 clock my-02 mx-02">
-          <span class="fs-09 fw-05 mb-02 seconds">39</span>
+          <span class="fs-09 fw-05 mb-02" id="seconds"></span>
           <span class="fs-04">Sec</span>
         </div>
       </div>
@@ -100,30 +100,15 @@
 
 
   <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
 
   <script src="js/validacion.js"></script>
 
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-
-  <script src="vendor/countdowntime/countdowntime.js"></script>
-  <script>
-    $('.cd100').countdown100({
-      // Set Endtime here
-      // Endtime must be > current time
-      endtimeYear: 0,
-      endtimeMonth: 0,
-      endtimeDate: 35,
-      endtimeHours: 18,
-      endtimeMinutes: 0,
-      endtimeSeconds: 0,
-      timeZone: "America/Costa_Rica"
-      // go to " http://momentjs.com/timezone/ " to get timezone
-    });
-  </script>
-  <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+  <script src="js/countdown.js"></script>
 
 </body>
 
