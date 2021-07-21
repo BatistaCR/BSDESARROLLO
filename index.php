@@ -43,7 +43,7 @@
 
         <div class="col-3 clock my-02 mx-02">
           <span class="fs-09 fw-05 mb-02" id="seconds"></span>
-          <span class="fs-04">Sec</span>
+          <span class="fs-04">Seg</span>
         </div>
       </div>
       <div class="col-12">
