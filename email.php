@@ -1,18 +1,20 @@
 <?php
-  $emisor  = ($_POST['correo']);
-  $receptor = "bsdesarrollo.cr@gmail.com";
-  $asunto = "Contacto de sitio web";
-  $mensaje = ($_POST['comentario']);
+$to = "bsdesarrollo.cr@gmail.com";
+$subject = "Contacto sitio web";
+$txt = ($_POST['comentario']);
+$headers = "From:" . ($_POST['correo']) . "\r\n";
+header('Location: index.php');
 
-  $cabeceras = 'From:<'.$emisor.'>' . "\r\n" .
-    'To:<'.$receptor.'>' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-  
-  if(@mail($emisor, $receptor, $asunto, $mensaje, $cabeceras))
-  {
-      echo "El email se envió correctamente a ".$receptor;
-   }
-  else{
-      echo "El email no se pudo enviar.";
-  }
+     if(@mail($to, $subject, $txt, $headers))
+     {
+        echo '<script language="javascript">';
+        echo 'alert("El mensaje ha sido enviado")';
+        echo '</script>';
+      }
+     else{
+        echo '<script language="javascript">';
+        echo 'alert("El mensaje no se pudo enviar")';
+        echo '</script>';
+     }
+     exit;
 ?>
